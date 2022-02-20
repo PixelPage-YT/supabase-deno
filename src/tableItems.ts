@@ -8,8 +8,7 @@ export class supabaseTableItems{
     }
     async all(){
         let res = await fetch(this.client.url + "rest/v1/" + this.tableName + "?select=*", {headers:{"apikey": this.client.anonkey}})
-        res = await res.json()
-        return res
+        return await res.json()
     }
     async add(item:object){
         let res = await fetch(this.client.url + "rest/v1/" + this.tableName, {
@@ -37,7 +36,6 @@ export class supabaseTableItems{
 
     async get(matchname:string,matchvalue:string|number|object|boolean){
         let res = await fetch(this.client.url + "rest/v1/" + this.tableName + "?" + matchname + "=eq." + matchvalue +  "&select=*", {headers:{"apikey": this.client.anonkey}})
-        res = await res.json()
-        return res
+        return await res.json()
     }
 }
