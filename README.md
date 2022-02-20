@@ -3,6 +3,7 @@
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
     <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg">
 </p>
+
 > A Deno API for [Supabase](https://supabase.io/), an alternative to FireBase
 
 ### Usage
@@ -21,4 +22,4 @@ console.log(await table.items.all())
 ```
 
 ### ToDo
-[ ] RLS Client
+❎ RLS Client
