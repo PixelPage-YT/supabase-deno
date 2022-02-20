@@ -17,7 +17,7 @@ const sbclient = new supabaseClient("https://xyz.supabase.co","your-anon-key")
 ```
 ##### Get items from a table
 ```ts
-let table = sbclient.getTable("todo")
+let table = sbclient.tables().get("todo")
 console.log(await table.items.all())
 ```
 
