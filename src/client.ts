@@ -1,4 +1,5 @@
 import { supabaseTable } from "./table.ts"
+import { supabaseClientTables } from "./clienttables.ts"
 
 export class supabaseClient{
     url:string;
@@ -10,8 +11,7 @@ export class supabaseClient{
         this.url = url;
         this.anonkey = anonkey
     }
-
-    getTable(name:string){
-        return new supabaseTable(name, this)
+    tables(){
+        return new supabaseClientTables(this)
     }
 }
