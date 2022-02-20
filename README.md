@@ -21,4 +21,4 @@ console.log(await table.items.all())
 ```
 
 ### ToDo
-[] RLS Client
+[ ] RLS Client
