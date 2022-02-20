@@ -9,7 +9,7 @@
 ### Usage
 ##### Import
 ```ts
-import { supabaseClient } from "https://deno.land/x/supabase-deno/mod.ts";
+import { supabaseClient } from "https://deno.land/x/supabase_deno/mod.ts";
 ```
 ##### Create Client
 ```ts
