@@ -34,4 +34,10 @@ export class supabaseTableItems{
         )
         return await res.text()
     }
+
+    async get(matchname:string,matchvalue:string|number|object|boolean){
+        let res = await fetch(this.client.url + "rest/v1/" + this.tableName + "?" + matchname + "=eq." + matchvalue +  "&select=*", {headers:{"apikey": this.client.anonkey}})
+        res = await res.json()
+        return res
+    }
 }
