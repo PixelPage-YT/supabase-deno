@@ -22,4 +22,16 @@ export class supabaseTableItems{
         })
         return await res.text()
     }
+
+    async delete(matchname:string,matchvalue:string|number|object|boolean){
+        let res = await fetch(this.client.url + "rest/v1/" + this.tableName + "?" + matchname + "=eq." + matchvalue,{
+                method:'DELETE',
+                headers: {
+                    'Content-Type':'application/json',
+                    "apikey": this.client.anonkey
+                },
+            }
+        )
+        return await res.text()
+    }
 }
