@@ -5,8 +5,8 @@
 </p>
 
 > A Deno API for [Supabase](https://supabase.io/), an alternative to FireBase
-
 ### Usage
+> Keep in mind that this version is WIP and not production ready. I'm trying to implement new features such as RLS when i've got time
 ##### Import
 ```ts
 import { supabaseClient } from "https://deno.land/x/supabase_deno/mod.ts";
