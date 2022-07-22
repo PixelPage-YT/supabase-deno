@@ -1,7 +1,7 @@
 # Supabase-Deno
 <p>
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
-    <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg">
+    <img src="https://img.shields.io/badge/Maintained%3F-no-red.svg">
 </p>
 
 > A Deno API for [Supabase](https://supabase.io/), an alternative to FireBase
